@@ -1,4 +1,4 @@
-# EdgeGuard — AI-at-the-Edge Vehicle Health Copilot
+# EdgeGuard - AI-at-the-Edge Vehicle Health Copilot
 
 ### **Tata InnoVent 2026 Innovation Challenge Entry**
 **Created by Team Hidden Layer:**
