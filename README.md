@@ -30,21 +30,21 @@ graph TD
     classDef cloudNode fill:#faf5ff,stroke:#a855f7,stroke-width:2px,color:#581c87;
     
     %% Edge Layer
-    subgraph Edge Layer (In-Vehicle Console)
+    subgraph EdgeLayer ["Edge Layer (In-Vehicle Console)"]
         UI[React Infotainment Screen]:::edgeNode
         LocalEngine[Local Edge Risk Engine]:::edgeNode
         VoiceSim[Voice Sim Input Panel]:::edgeNode
     end
     
     %% Backend Layer
-    subgraph Core Backend Layer (Spring Boot API)
+    subgraph BackendLayer ["Core Backend Layer (Spring Boot API)"]
         SB[Spring Boot Core REST Service]:::backendNode
         H2[(In-Memory H2 Database)]:::backendNode
         Datasql[data.sql Seed Loader]:::backendNode
     end
 
     %% Cloud/ML Layer
-    subgraph Cloud & ML Intelligence
+    subgraph CloudLayer ["Cloud & ML Intelligence"]
         Flask[Python Flask ML Service]:::cloudNode
         TabNet[TabNet Predictive Model]:::cloudNode
         Groq[Groq LLM API Llama 3.3]:::cloudNode
